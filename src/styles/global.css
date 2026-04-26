@@ -1,0 +1,52 @@
+@import url(colors.css);
+
+@font-face {
+    font-family: 'ZTNature';
+    src: url('../assets/fonts/ZTNature-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GeistRegular';
+    src: url('../assets/fonts/Geist-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: var(--back-color_1);
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* elimina el scroll */
+    height: 100vh;
+}
+
+.header {
+    background-color: var(--back-color_2);
+    border: 2px solid var(--border-1);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+
+    gap: 10px;
+
+    height: 60px;
+
+    transition: border-color 0.2s ease-out;
+}
+
+.header:hover {
+    border-color: var(--border-1_hover);
+}
+
+.about-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 110px);
+}
+
+.logo{
+    width: 300px;
+    margin: 0;
+}
