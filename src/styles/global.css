@@ -10,6 +10,14 @@
     src: url('../assets/fonts/Geist-Regular.ttf') format('truetype');
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 body {
     background-color: var(--back-color_1);
     margin: 0;
@@ -24,7 +32,7 @@ body {
     border-radius: 20px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 10px;
     align-items: center;
 
@@ -39,6 +47,29 @@ body {
     border-color: var(--border-1_hover);
 }
 
+.menu-icons {
+    display: flex;
+    flex-direction: row;  /* elementos en horizontal */
+    align-items: center;
+    gap: 8px;
+    padding-left: 10px;   /* separación del borde izquierdo */
+}
+
+.icons {
+    font-size: 50px;
+    color: var(--icon-1);
+    border-radius: 10px;
+    background-color: --back-color_1;
+
+    transition: color 0.2s ease-out;
+    transition: background-color 0.2s ease-out
+}
+
+.icons:hover {
+    color: var(--icon-1_hover);
+    background-color: var(--back-color_1_hover  );
+}
+
 .about-sec {
     display: flex;
     justify-content: center;
@@ -49,4 +80,5 @@ body {
 .logo{
     width: 300px;
     margin: 0;
+    z-index: -10;
 }
