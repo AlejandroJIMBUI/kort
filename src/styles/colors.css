@@ -2,8 +2,13 @@
     --back-color_1: #131313;
     --back-color_2: #0f0f0f;
 
+    --back-color_1_hover: #303030;
+
     --border-1: #5a5a5a;
     --border-1_hover: #b6b6b6;
 
     --txt-1: #1f1f1f;
+
+    --icon-1: #4e4e4e;
+    --icon-1_hover: #e9e9e9;
 }
